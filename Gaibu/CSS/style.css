@@ -3,12 +3,24 @@
     margin: 0;
 }
 
-/* 
+:root {
+    --darkgreen: #23650C;
+    --darkblue: #0E088D;
+}
+
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+/* 
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -20,11 +32,15 @@
     font-style: normal;
 } */
 
+
+body {
+}
+
 /* Nav */
 
-#logo_nav {
-    width: 80%;
-    margin: 10%;
+.logo_nav {
+    width: 60%;
+    margin: 10% 20% 0 20%;
 }
 
 .nav_hidden {
@@ -45,3 +61,135 @@
 .nav_hidde:focus .nav_menu {
     display: block;
 } 
+
+/* carrossel */
+.carrossel {
+
+}
+
+.card_carrossel {
+    width: 100%;
+    height: 15em;
+}
+
+.slick-arrow {
+    display: none;
+}
+
+.slick-prev {
+    left: 2px;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 2px;
+}
+
+/* Quem Somos */
+
+.titulo_section {
+    text-align: center;
+    padding: 5%;
+}
+
+.p_quemSomos {
+    text-align: justify;
+    margin: 0 10%;
+}
+
+.img_quemSomos {
+    width: 70%;
+    margin: 10% 15%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* barra verde */
+
+.barra_verde {
+    width: 100%;
+    height: 4em;
+    background-color: var(--darkgreen);
+}
+
+/* Servicos */
+
+.card_menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgb(179, 177, 177);
+    padding: 5%;
+}
+
+.img_card_servicos {
+    margin: auto;
+    width: 100%;
+}
+
+.titulo_card_servicos {
+
+}
+
+.p_card_servicos {
+    text-align: justify;
+}
+
+.btn_card_servicos {
+    width: 33%;
+    margin-top: 5%;
+    background-color: var(--darkblue);
+    color: white;
+    text-align: center;
+    border: 0px solid transparent;
+    border-radius: 6px;
+    padding: 3%;
+}
+
+/* footer */
+
+footer {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: #0E088D;
+    color: white;
+    padding: 15% 5% 5% 5%;
+    border-radius: 16px 16px 0 0 ;
+    border: 0px solid transparent;
+    text-align: center;
+
+}
+
+.nav_menu_footer {
+    padding-inline-start: 0px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-bottom: 3%;
+    width: 90%;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.nav_menu_footer li {
+    text-align: center;
+}
+
+.nav_menu_footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    padding: 1% 0;
+}
