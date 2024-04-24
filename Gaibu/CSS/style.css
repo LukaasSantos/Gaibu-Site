@@ -2,3 +2,46 @@
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
+
+/* 
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+} */
+
+/* Nav */
+
+#logo_nav {
+    width: 80%;
+    margin: 10%;
+}
+
+.nav_hidden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.nav_menu {
+    display: none;
+}
+
+.nav_menu_card {
+    list-style: none;
+}
+
+.nav_hidde:focus .nav_menu {
+    display: block;
+} 
