@@ -5,36 +5,25 @@
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
-
 :root {
     --darkgreen: #23650C;
     --darkblue: #0E088D;
 }
-
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
-
 .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-style: normal;
-}
-
-/* 
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
     font-style: normal;
 }
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-} */
-
+}
 
 /* Nav */
 
@@ -42,35 +31,28 @@
     width: 60%;
     margin: 10% 20% 0 20%;
 }
-
 .nav_hidden {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5%;
 }
-
 .nav_menu {
     display: none;
     text-align: center;
     padding-inline-start: 0px;
 }
-
 .nav_menu_card {
     list-style: none;
     padding: 3%;
-}
-
-.nav_menu_card a {
     text-decoration: none;
     color: black;
 }
-
-.nav_menu_card:hover {
+/* .nav_menu_card:hover {
     border-bottom: 2px solid black;
     border-radius: 3px;
     transition: 0.25s;
-}
+} */
 
 /* carrossel */
 
@@ -78,7 +60,6 @@
     width: 100%;
     height: 15em;
 }
-
 .slick-prev {
     left: 2px;
     z-index: 2;
@@ -92,18 +73,16 @@
 .titulo_section {
     text-align: center;
     padding: 5%;
+    font-size: 36pt;
+    text-shadow: 0px 4px 4px #0000003f
 }
-
-.p_quemSomos {
+.p_quemSomos_pgn {
     text-align: justify;
     margin: 0 10%;
 }
-
-.img_quemSomos {
+.img_quemSomos_pgn {
     width: 70%;
     margin: 10% 15%;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 /* barra verde */
@@ -120,7 +99,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 .card {
     display: flex;
     flex-direction: column;
@@ -129,27 +107,39 @@
     border: 0px solid black;
     border-radius: 10px;
     box-shadow: 0px 0px 12px rgb(179, 177, 177);
-    padding: 5%;
+    padding: 0%;
+    width: 100%;
 }
-
 .img_card_servicos {
     margin: auto;
     width: 100%;
+    border-radius: 10px;
 }
-
 .p_card_servicos {
     text-align: justify;
+    padding: 5%;
 }
-
 .btn_card_servicos {
     width: 33%;
-    margin-top: 5%;
+    margin: 5% auto;
     background-color: var(--darkblue);
     color: white;
     text-align: center;
     border: 0px solid transparent;
     border-radius: 6px;
     padding: 3%;
+    text-decoration: none;
+}
+
+.card .btn_card_servicos button {
+    /* width: 40%;
+    margin: 5%;
+    border: none;
+    text-align: center;
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 6px;
+    padding: 3%; */
 }
 
 /* titulo formulario */
@@ -159,7 +149,6 @@
     color: white;
     text-align: center;
     padding: 5% 0;
-
 }
 
 /* formulario */
@@ -171,7 +160,6 @@ form {
     width: 90%;
     margin: 5%;
 }
-
 input {
     padding: 3%;
     margin: 2%;
@@ -179,17 +167,15 @@ input {
     border: 0px solid transparent;
     border-radius: 5px;
 }
-
 .enviar_form:hover {
     background-color: #4a4a4a71;
     transition: 0.5;
 }
 
-
 /* footer */
 
 footer {
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     background-color: #0E088D;
@@ -201,7 +187,6 @@ footer {
     box-shadow: 0px -6px 10px rgb(179, 177, 177) ;
 
 }
-
 .nav_menu_footer {
     padding-inline-start: 0px;
     display: flex;
@@ -213,18 +198,18 @@ footer {
     justify-content: space-evenly;
     margin: auto;
 }
-
 .nav_menu_footer li {
     text-align: center;
 }
-
 .nav_menu_footer a {
     color: white;
     text-decoration: none;
 }
-
 footer p {
     padding: 1% 0;
+}
+.qrcode {
+    display: none;
 }
 
 /* ----------------------------------------------- */
@@ -238,36 +223,191 @@ footer p {
 /* ------------------------------------------------- */
 /* Desktop */
 @media (min-width: 1024px){
+
+/* Nav Bar */
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 .link_img_logo {
-    height: 10%;
+width: 20%;
 }
-
 .logo_nav {
-    width: 70%;
+    width: 100%;
     margin: auto;
-    padding: 5%;
+    padding: 0%;
 }
-
 .nav_hidden {
+    width: 60%;
+    padding: 0%;
 }
-
 .nav_menu {
     display: flex;
     flex-direction: row;
-    height: 40%;
+    height: auto;
+    width: 80%;
 }
-
 .nav_menu_card {
+height: auto;
+padding: 0%;
+width: 100%;
+padding: 8% 0;
 }
-
+.nav_menu_card:hover {
+    color: white;
+    background-color: rgb(114, 114, 114);
+    transition: 0.25s;
+}
+.nav_menu_card a {
+    width: 10%;
+    padding: 10%
+}
 .btn_menu {
     display: none;
 }
 
+/* Carrossel */
 
+.card_carrossel {
+height: 26em;
+}
+
+/* Quem Somos */
+
+.quemSomos {
+    display: flex;
+    padding: 0 0 8% 0;
+}
+.p_quemSomos {
+width: 60%;
+padding: 5%;
+margin: 0;
+}
+.img_quemSomos {
+    width: 40%;
+    margin: auto;
+    padding: 6%;
+}
+
+/* Quem Somos Pagina */
+
+.quemSomos_pgn {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 8% 0;
+}
+.text_quemSomos_pgn {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.p_quemSomos_pgn {
+width: 60%;
+padding: 5%;
+margin: 0;
+}
+.img_quemSomos_pgn {
+    width: 40%;
+    margin: auto;
+    padding: 6%;
+}
+
+/* Barra Verde */
+
+/* Serviços */
+
+.card_menu {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+.card {
+    margin: auto;
+    width: 40%;
+    margin-bottom: 5%;
+}
+.img_card_servicos {
+    width: 100%;
+}
+
+/* Formulario */
+
+.form_contato {
+    
+}
+.titulo_contato {
+    padding: 2%;
+}
+.titulo_form {
+    padding: 0;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+    padding: 5% 0;
+}
+input, textarea {
+    width: 40%;
+    padding: 3%;
+    background-color: #4a4a4a2e;
+    border: 0px solid transparent;
+    border-radius: 5px;
+}
+textarea {
+    width: 100%;
+    margin: 2%;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_menu_footer {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 8% ;
+}
+
+.nav_menu_footer li {
+    padding: 0;
+    margin: 0;
+}
+
+.aside_footer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    padding: 2%;
+}
+
+footer p {
+    padding: 0%;
+} 
+
+.logo_footer {
+    width: 25%;
+    margin: 0;
+}
+
+.logo_nav {
+    width: 75%;
+}
+
+.qrcode {
+    display: block;
+    width: 10%;
+    height: 5%;
+}
 
 }

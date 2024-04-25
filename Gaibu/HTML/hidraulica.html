@@ -16,42 +16,44 @@
 
 <!-- Nav Bar -->
 <header>
-    <a href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-preto-removebg-preview.png" alt="Logo Gaibu"></a>
+    <a class="link_img_logo" href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-preto-removebg-preview.png" alt="Logo Gaibu"></a>
     <nav class="nav_hidden">
-        <img onclick="acao()" src="../Res/Img/icons8-cardápio-50.png" alt="botao para abrir menu lateral">
-            <ul class="nav_menu" id="submenu">
-                <li class="nav_menu_card"><a href="../HTML/main.html">Home</a></li>
-                <li class="nav_menu_card"><a href="../HTML/servicos.html">Serviços</a></li>
-                <li class="nav_menu_card"><a href="../HTML/quemsomos.html">Quem Somos</a></li>
-                <li class="nav_menu_card"><a href="../HTML/contato.html">Contato</a></li>
-            </ul>
+        <img onclick="acao()" class="btn_menu" src="../Res/Img/icons8-cardápio-50.png" alt="botao para abrir menu lateral">
+        <ul class="nav_menu" id="submenu">
+            <a class="nav_menu_card" href="../HTML/main.html"><li>Home</li></a>
+            <a class="nav_menu_card" href="../HTML/servicos.html"><li>Serviços</li></a>
+            <a class="nav_menu_card" href="../HTML/quemsomos.html"><li>Quem Somos</li></a>
+            <a class="nav_menu_card" href="../HTML/contato.html"><li>Contato</li></a>
+        </ul>
     </nav>
 </header>
 <main>
 
 <!-- utilizei "foco" pra criar um css que sirva de base para os outros sites de servico -->
-<div class="desc_foco">
+<section class="foco">
     <img class="img_foco" src="../Res/Img/20230323_153924_quad.jpg" alt="">
+    <div class="desc_foco">
         <h2 class="titulo_foco poppins-extralight">Hidraulica</h2>
-        <p class="p_foco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui </p>
+        <p class="p_foco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui  </p>
         <a href=""><button class="btn_foco">Entre em Contato</button></a> 
     </div>
+</section>
 
 <!-- Outros Servicos -->
 <section class="servicos">
+    <h1 class="titulo_section poppins-extralight">Outros Serviços</h1>
     <div class="card_menu">
-        <h1 class="titulo_section poppins-extralight">Outros Serviços</h1>
-        <div class="card serralheria">
+        <div sty class="card serralheria">
             <img class="img_card_servicos" src="../Res/Img/20230323_1539244.png" alt="">
             <h2 class="titulo_card_servicos ">Serralheria</h2>
             <p class="p_card_servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui </p>
-            <a href="..\HTML\serralheria.html"><button class="btn_card_servicos">Saiba Mais</button></a> 
+            <a class="btn_card_servicos" href="../HTML/serralheria.html">Saiba Mais</a> 
         </div>
         <div class="card civil">
             <img class="img_card_servicos" src="../Res/Img/20230323_1539244.png" alt="">
             <h2 class="titulo_card_servicos ">Construção Civil</h2>
             <p class="p_card_servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui </p>
-        <a href="..\HTML\civil.html"><button class="btn_card_servicos">Saiba Mais</button></a>
+            <a class="btn_card_servicos" href="../HTML/civil.html">Saiba Mais</a>
         </div>
     </div>
 
@@ -61,15 +63,18 @@
 
 <!-- footer -->
 <footer>
-    <ul class="nav_menu_footer">
-        <li><a href="../HTML/main.html">Home</a></li>|
-        <li><a href="../HTML/servicos.html">Serviços</a></li>|
-        <li><a href="../HTML/quemsomos.html">Quem Somos</a></li>|
-        <li><a href="../HTML/contato.html">Contato</a></li>
-    </ul>
-    <p>(11) 9 9725-2646 | gaibu.servicos@gaibu.com</p>
-    <p>©Todos os direitos Reservados | Rua tal, 404 - Osasco - São Paulo, 06226-280 |<a target="_blank" href="https://icons8.com/icon/36389/menu"></a> ícones por <a target="_blank" style="color: white;" href="https://icons8.com">Icons8</a> </p>
-    <a href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-branco-removebg-preview.png" alt=""></a>
+    <aside class="aside_footer">
+        <ul class="nav_menu_footer">
+            <li><a href="../HTML/main.html">Home</a></li>|
+            <li><a href="../HTML/servicos.html">Serviços</a></li>|
+            <li><a href="../HTML/quemsomos.html">Quem Somos</a></li>|
+            <li><a href="../HTML/contato.html">Contato</a></li>
+        </ul>
+        <p>(11) 9 9725-2646 | gaibu.servicos@gaibu.com</p>
+        <p>©Todos os direitos Reservados | Rua tal, 404 - Osasco - São Paulo, 06226-280 |<a target="_blank" href="https://icons8.com/icon/36389/menu"></a> ícones por <a target="_blank" style="color: white;" href="https://icons8.com">Icons8</a> </p>
+    </aside>
+    <img class="qrcode" src="../Res/Img/Untitled.png" alt="">
+    <a href="../HTML/main.html" class="logo_footer"><img class="logo_nav" src="../Res/Img/logo-branco-removebg-preview.png" alt=""></a>
 </footer>
 
 <!-- jquery e slick  -->
