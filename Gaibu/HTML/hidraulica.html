@@ -16,14 +16,14 @@
 
 <!-- Nav Bar -->
 <header>
-    <a href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-preto-removebg-preview.png" alt="Logo Gaibu"></a> 
+    <a href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-preto-removebg-preview.png" alt="Logo Gaibu"></a>
     <nav class="nav_hidden">
-        <img src="../Res/Img/icons8-cardápio-50.png" alt="botao para abrir menu lateral">
-            <ul class="nav_menu">
-                <li class="nav_menu_card">Home</li>
-                <li class="nav_menu_card">Serviços</li>
-                <li class="nav_menu_card" >Quem Somos</li>
-                <li class="nav_menu_card">Contato</li>
+        <img onclick="acao()" src="../Res/Img/icons8-cardápio-50.png" alt="botao para abrir menu lateral">
+            <ul class="nav_menu" id="submenu">
+                <li class="nav_menu_card"><a href="../HTML/main.html">Home</a></li>
+                <li class="nav_menu_card"><a href="../HTML/servicos.html">Serviços</a></li>
+                <li class="nav_menu_card"><a href="../HTML/quemsomos.html">Quem Somos</a></li>
+                <li class="nav_menu_card"><a href="../HTML/contato.html">Contato</a></li>
             </ul>
     </nav>
 </header>
@@ -63,13 +63,13 @@
 <footer>
     <ul class="nav_menu_footer">
         <li><a href="../HTML/main.html">Home</a></li>|
-        <li><a href="">Serviços</a></li>|
-        <li><a href="">Quem Somos</a></li>|
-        <li><a href="">Contato</a></li>
+        <li><a href="../HTML/servicos.html">Serviços</a></li>|
+        <li><a href="../HTML/quemsomos.html">Quem Somos</a></li>|
+        <li><a href="../HTML/contato.html">Contato</a></li>
     </ul>
     <p>(11) 9 9725-2646 | gaibu.servicos@gaibu.com</p>
     <p>©Todos os direitos Reservados | Rua tal, 404 - Osasco - São Paulo, 06226-280 |<a target="_blank" href="https://icons8.com/icon/36389/menu"></a> ícones por <a target="_blank" style="color: white;" href="https://icons8.com">Icons8</a> </p>
-    <img class="logo_nav" src="../Res/Img/logo-branco-removebg-preview.png" alt="">
+    <a href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-branco-removebg-preview.png" alt=""></a>
 </footer>
 
 <!-- jquery e slick  -->

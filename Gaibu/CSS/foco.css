@@ -49,15 +49,26 @@
 
 .nav_menu {
     display: none;
+    text-align: center;
+    padding-inline-start: 0px;
 }
 
 .nav_menu_card {
     list-style: none;
+    padding: 3%;
 }
 
-.nav_hidde:focus .nav_menu {
-    display: block;
-} 
+.nav_menu_card a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_menu_card:hover {
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+    transition: 0.25s;
+}
+
 /* Foco */
 .img_foco {
     width: 100%;
@@ -93,7 +104,7 @@
     color: white;
     background-color: #4dd71a;
     box-shadow: 0px 0px 10px #174208;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 
@@ -147,7 +158,7 @@ footer {
     border-radius: 16px 16px 0 0 ;
     border: 0px solid transparent;
     text-align: center;
-
+    box-shadow: 0px -6px 10px rgb(179, 177, 177) ;
 }
 
 .nav_menu_footer {
