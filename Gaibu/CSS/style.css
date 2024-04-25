@@ -76,11 +76,11 @@
     font-size: 36pt;
     text-shadow: 0px 4px 4px #0000003f
 }
-.p_quemSomos_pgn {
+.p_quemSomos, .p_quemSomos_pgn {
     text-align: justify;
     margin: 0 10%;
 }
-.img_quemSomos_pgn {
+.img_quemSomos, .img_quemSomos_pgn {
     width: 70%;
     margin: 10% 15%;
 }
@@ -129,17 +129,6 @@
     border-radius: 6px;
     padding: 3%;
     text-decoration: none;
-}
-
-.card .btn_card_servicos button {
-    /* width: 40%;
-    margin: 5%;
-    border: none;
-    text-align: center;
-    background-color: var(--darkblue);
-    color: white;
-    border-radius: 6px;
-    padding: 3%; */
 }
 
 /* titulo formulario */
@@ -334,9 +323,6 @@ margin: 0;
 
 /* Formulario */
 
-.form_contato {
-    
-}
 .titulo_contato {
     padding: 2%;
 }
