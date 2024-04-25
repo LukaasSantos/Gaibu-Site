@@ -15,38 +15,42 @@
 <body>
 <!-- Nav Bar -->
 <header>
-    <a href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-preto-removebg-preview.png" alt="Logo Gaibu"></a>
+    <a class="link_img_logo" href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-preto-removebg-preview.png" alt="Logo Gaibu"></a>
     <nav class="nav_hidden">
-        <img onclick="acao()" src="../Res/Img/icons8-cardápio-50.png" alt="botao para abrir menu lateral">
-            <ul class="nav_menu" id="submenu">
-                <li class="nav_menu_card"><a href="../HTML/main.html">Home</a></li>
-                <li class="nav_menu_card"><a href="../HTML/servicos.html">Serviços</a></li>
-                <li class="nav_menu_card"><a href="../HTML/quemsomos.html">Quem Somos</a></li>
-                <li class="nav_menu_card"><a href="../HTML/contato.html">Contato</a></li>
-            </ul>
+        <img onclick="acao()" class="btn_menu" src="../Res/Img/icons8-cardápio-50.png" alt="botao para abrir menu lateral">
+        <ul class="nav_menu" id="submenu">
+            <a class="nav_menu_card" href="../HTML/main.html"><li>Home</li></a>
+            <a class="nav_menu_card" href="../HTML/servicos.html"><li>Serviços</li></a>
+            <a class="nav_menu_card" href="../HTML/quemsomos.html"><li>Quem Somos</li></a>
+            <a class="nav_menu_card" href="../HTML/contato.html"><li>Contato</li></a>
+        </ul>
     </nav>
 </header>
 
 <main>
 <!-- Quem Somos -->
-<section class="quemSomos">
+<section class="quemSomos_pgn">
     <h1 class="titulo_section poppins-extralight">Quem Somos</h1>
-    <p class="p_quemSomos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui sem. Sed tristique orci est, sit amet porta nisi porttitor quis. Fusce nec eros nunc. Quisque vestibulum at nunc nec dignissim. Integer sit amet tortor tincidunt, viverra metus vel, dignissim massa. Quisque nec lacus in turpis faucibus dapibus. Pellentesque justo sapien, feugiat nec metus at, volutpat suscipit lectus. In congue luctus cursus. Nunc ut neque interdum felis pulvinar viverra.
-    </p>
-    <img class="img_quemSomos" src="../Res/Img/20230211_1548221.png" alt="Foto da equipe">
+    <div class="text_quemSomos_pgn">
+        <p class="p_quemSomos_pgn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui sem. Sed tristique orci est, sit amet porta nisi porttitor quis. Fusce nec eros nunc. Quisque vestibulum at nunc nec dignissim. Integer sit amet tortor tincidunt, viverra metus vel, dignissim massa. Quisque nec lacus in turpis faucibus dapibus. Pellentesque justo sapien, feugiat nec metus at, volutpat suscipit lectus. In congue luctus cursus. Nunc ut neque interdum felis pulvinar viverra.</p>
+        <img class="img_quemSomos_pgn" src="../Res/Img/20230211_1548221.png" alt="Foto da equipe">
+    </div>
 </section>
 </main>
 <!-- footer -->
 <footer>
-    <ul class="nav_menu_footer">
-        <li><a href="../HTML/main.html">Home</a></li>|
-        <li><a href="../HTML/servicos.html">Serviços</a></li>|
-        <li><a href="../HTML/quemsomos.html">Quem Somos</a></li>|
-        <li><a href="../HTML/contato.html">Contato</a></li>
-    </ul>
-    <p>(11) 9 9725-2646 | gaibu.servicos@gaibu.com</p>
-    <p>©Todos os direitos Reservados | Rua tal, 404 - Osasco - São Paulo, 06226-280 |<a target="_blank" href="https://icons8.com/icon/36389/menu"></a> ícones por <a target="_blank" style="color: white;" href="https://icons8.com">Icons8</a> </p>
-    <a href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-branco-removebg-preview.png" alt=""></a>
+    <aside class="aside_footer">
+        <ul class="nav_menu_footer">
+            <li><a href="../HTML/main.html">Home</a></li>|
+            <li><a href="../HTML/servicos.html">Serviços</a></li>|
+            <li><a href="../HTML/quemsomos.html">Quem Somos</a></li>|
+            <li><a href="../HTML/contato.html">Contato</a></li>
+        </ul>
+        <p>(11) 9 9725-2646 | gaibu.servicos@gaibu.com</p>
+        <p>©Todos os direitos Reservados | Rua tal, 404 - Osasco - São Paulo, 06226-280 |<a target="_blank" href="https://icons8.com/icon/36389/menu"></a> ícones por <a target="_blank" style="color: white;" href="https://icons8.com">Icons8</a> </p>
+    </aside>
+    <img class="qrcode" src="../Res/Img/Untitled.png" alt="">
+    <a href="../HTML/main.html" class="logo_footer"><img class="logo_nav" src="../Res/Img/logo-branco-removebg-preview.png" alt=""></a>
 </footer>
 
 <!-- jquery e slick  -->

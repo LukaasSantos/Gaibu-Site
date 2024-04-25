@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaibu - Serviços Industriais</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaibu - Serviços Industriais</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="shortcut icon" href="../Res/Img/logo-branco-removebg-preview.png" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <!-- slick -->
@@ -15,21 +16,21 @@
 
 <body>
 <!-- Nav Bar -->
+
 <header>
     <a class="link_img_logo" href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-preto-removebg-preview.png" alt="Logo Gaibu"></a>
     <nav class="nav_hidden">
         <img onclick="acao()" class="btn_menu" src="../Res/Img/icons8-cardápio-50.png" alt="botao para abrir menu lateral">
         <ul class="nav_menu" id="submenu">
-            <li class="nav_menu_card"><a href="../HTML/main.html">Home</a></li>
-            <li class="nav_menu_card"><a href="../HTML/servicos.html">Serviços</a></li>
-            <li class="nav_menu_card"><a href="../HTML/quemsomos.html">Quem Somos</a></li>
-            <li class="nav_menu_card"><a href="../HTML/contato.html">Contato</a></li>
+            <a class="nav_menu_card" href="../HTML/main.html"><li>Home</li></a>
+            <a class="nav_menu_card" href="../HTML/servicos.html"><li>Serviços</li></a>
+            <a class="nav_menu_card" href="../HTML/quemsomos.html"><li>Quem Somos</li></a>
+            <a class="nav_menu_card" href="../HTML/contato.html"><li>Contato</li></a>
         </ul>
     </nav>
 </header>
 
 <main>
-
 <!-- carrossel -->
 <div class="carrossel">
     <div><a href=""><img class="card_carrossel" src="../Res/Img/20230308_171126.jpg" alt=""></a></div> 
@@ -39,11 +40,13 @@
 </div>
 
 <!-- Quem Somos -->
-<section class="quemSomos">
+<section>
     <h1 class="titulo_section poppins-extralight">Quem Somos</h1>
+    <div class="quemSomos" >
     <p class="p_quemSomos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui sem. Sed tristique orci est, sit amet porta nisi porttitor quis. Fusce nec eros nunc. Quisque vestibulum at nunc nec dignissim. Integer sit amet tortor tincidunt, viverra metus vel, dignissim massa. Quisque nec lacus in turpis faucibus dapibus. Pellentesque justo sapien, feugiat nec metus at, volutpat suscipit lectus. In congue luctus cursus. Nunc ut neque interdum felis pulvinar viverra.
     </p>
     <img class="img_quemSomos" src="../Res/Img/20230211_1548221.png" alt="Foto da equipe">
+    </div>
 </section>
 
 <!-- Barra verde -->
@@ -53,23 +56,23 @@
 <section class="servicos">
     <h1 class="titulo_section poppins-extralight">Serviços</h1>
     <div class="card_menu">
-        <div class="card serralheria">
+        <div sty class="card">
             <img class="img_card_servicos" src="../Res/Img/20230323_1539244.png" alt="">
             <h2 class="titulo_card_servicos ">Serralheria</h2>
             <p class="p_card_servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui </p>
-            <a href="../HTML/serralheria.html"><button class="btn_card_servicos">Saiba Mais</button></a> 
+            <a class="btn_card_servicos" href="../HTML/serralheria.html">Saiba Mais</a> 
         </div>
-        <div class="card hidraulica">
+        <div class="card">
             <img class="img_card_servicos" src="../Res/Img/20230323_1539244.png" alt="">
             <h2 class="titulo_card_servicos ">Hidraulica</h2>
             <p class="p_card_servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui </p>
-            <a href="../HTML/hidraulica.html"><button class="btn_card_servicos">Saiba Mais</button></a>
+            <a class="btn_card_servicos" href="../HTML/hidraulica.html">Saiba Mais</a>
         </div>
-        <div class="card civil">
+        <div class="card">
             <img class="img_card_servicos" src="../Res/Img/20230323_1539244.png" alt="">
             <h2 class="titulo_card_servicos ">Construção Civil</h2>
             <p class="p_card_servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui </p>
-        <a href="../HTML/civil.html"><button class="btn_card_servicos">Saiba Mais</button></a>
+            <a class="btn_card_servicos" href="../HTML/civil.html">Saiba Mais</a>
         </div>
     </div>
 </section>
@@ -77,15 +80,18 @@
 
 <!-- footer -->
 <footer>
-    <ul class="nav_menu_footer">
-        <li><a href="../HTML/main.html">Home</a></li>|
-        <li><a href="../HTML/servicos.html">Serviços</a></li>|
-        <li><a href="../HTML/quemsomos.html">Quem Somos</a></li>|
-        <li><a href="../HTML/contato.html">Contato</a></li>
-    </ul>
-    <p>(11) 9 9725-2646 | gaibu.servicos@gaibu.com</p>
-    <p>©Todos os direitos Reservados | Rua tal, 404 - Osasco - São Paulo, 06226-280 |<a target="_blank" href="https://icons8.com/icon/36389/menu"></a> ícones por <a target="_blank" style="color: white;" href="https://icons8.com">Icons8</a> </p>
-    <a href="../HTML/main.html"><img class="logo_nav" src="../Res/Img/logo-branco-removebg-preview.png" alt=""></a>
+    <aside class="aside_footer">
+        <ul class="nav_menu_footer">
+            <li><a href="../HTML/main.html">Home</a></li>|
+            <li><a href="../HTML/servicos.html">Serviços</a></li>|
+            <li><a href="../HTML/quemsomos.html">Quem Somos</a></li>|
+            <li><a href="../HTML/contato.html">Contato</a></li>
+        </ul>
+        <p>(11) 9 9725-2646 | gaibu.servicos@gaibu.com</p>
+        <p>©Todos os direitos Reservados | Rua tal, 404 - Osasco - São Paulo, 06226-280 |<a target="_blank" href="https://icons8.com/icon/36389/menu"></a> ícones por <a target="_blank" style="color: white;" href="https://icons8.com">Icons8</a> </p>
+    </aside>
+    <img class="qrcode" src="../Res/Img/Untitled.png" alt="">
+    <a href="../HTML/main.html" class="logo_footer"><img class="logo_nav" src="../Res/Img/logo-branco-removebg-preview.png" alt=""></a>
 </footer>
 
 <!-- jquery e slick  -->
