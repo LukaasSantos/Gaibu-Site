@@ -6,8 +6,12 @@
     margin: 0;
 }
 :root {
-    --darkgreen: #23650C;
-    --darkblue: #0E088D;
+    --black: #000000;
+    --white: #ffffff;
+    --darkgreen: #09aa61;
+    --darkgreenhover: #09894f;
+    --darkblue: #213489;
+    --darkbluehover: #1b2a6d;
 }
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
@@ -28,7 +32,7 @@
 /* Nav */
 
 .logo_nav {
-    width: 60%;
+    width: 100%;
     margin: 10% 20% 0 20%;
 }
 .nav_hidden {
@@ -46,10 +50,10 @@
     list-style: none;
     padding: 3%;
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 /* .nav_menu_card:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid --black;
     border-radius: 3px;
     transition: 0.25s;
 } */
@@ -68,7 +72,9 @@
     right: 2px;
 }
 
+
 /* Quem Somos */
+
 
 .titulo_section {
     text-align: center;
@@ -85,15 +91,90 @@
     margin: 10% 15%;
 }
 
-/* barra verde */
+/* Projetos Quem Somos */
 
-.barra_verde {
-    width: 100%;
-    height: 4em;
+.nossosProjetos {
+    background-color: var(--darkblue);
+    box-shadow: 0px 0px 10px rgb(179, 177, 177) ;
+    border-radius: 0 0 16px 16px;
+}
+.titulo_foco {
+    color: var(--white);
+    text-align: center;
+    padding: 5% 0;
+    font-size: 36pt;
+    text-shadow: 0px 4px 4px #0000003f;
+}
+.carrossel_projetos {
     background-color: var(--darkgreen);
+    padding: 5% 0;
+}
+.card_carrossel_projetos_focus {
+    width: 90%;
+    margin: 3% auto;
+    box-shadow: 0px 0px 20px var(--darkgreenhover);
+    border-radius: 16px;
+}
+.card_carrossel_projetos {
+    width: 100%;
+
+}
+/* carrossel versao mobile */
+
+.carrossel_projetos_desktop {
+    display: none;
+}
+.slider-nav-mobile {
+    width: 100%;
+    margin: auto;
+}
+
+.desc_projetos {
+    padding: 5%;
+    text-align: center;
+    color: var(--white);
+    font-size: 28pt;
 }
 
 /* Servicos */
+
+/* ondas */
+/* .custom-shape-divider-top-1714428199 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-top-1714428199 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}*/
+.custom-shape-divider-top-1714428199 .shape-fill {
+    fill: #FFFFFF;
+} 
+
+.servicos_home {
+    background-color: var(--darkblue);
+    display: flex;
+    flex-direction: column;
+}
+.titulo_section_servicos {
+    text-align: center;
+    color: var(--white);
+    padding: 5%;
+    font-size: 36pt;
+    text-shadow: 0px 4px 4px #0000003f
+}
+
+.card_verde {
+    background-color: var(--darkgreen);
+}
+
+/* Servicos pgn */
 
 .card_menu {
     display: flex;
@@ -116,26 +197,31 @@
     border-radius: 10px;
 }
 .p_card_servicos {
-    text-align: justify;
+    text-align: left;
+    padding: 5%;
+}
+.p_card_servicos_ul {
+    text-align: left;
+    margin: 0 5%;
     padding: 5%;
 }
 .btn_card_servicos {
     width: 33%;
     margin: 5% auto;
     background-color: var(--darkblue);
-    color: white;
+    color: var(--white);
     text-align: center;
     border: 0px solid transparent;
     border-radius: 6px;
     padding: 3%;
     text-decoration: none;
-}
+} 
 
 /* titulo formulario */
 
 .titulo_form {
     background-color: var(--darkgreen);
-    color: white;
+    color: var(--white);
     text-align: center;
     padding: 5% 0;
 }
@@ -167,14 +253,13 @@ footer {
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    background-color: #0E088D;
-    color: white;
+    background-color: var(--darkblue);
+    color: var(--white);
     padding: 15% 5% 5% 5%;
     border-radius: 16px 16px 0 0 ;
     border: 0px solid transparent;
     text-align: center;
     box-shadow: 0px -6px 10px rgb(179, 177, 177) ;
-
 }
 .nav_menu_footer {
     padding-inline-start: 0px;
@@ -191,7 +276,7 @@ footer {
     text-align: center;
 }
 .nav_menu_footer a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 footer p {
@@ -201,7 +286,7 @@ footer p {
     display: none;
 }
 
-/* ----------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------- */
 /*  Tablets */
 @media (min-width: 768px){
 
@@ -209,7 +294,8 @@ footer p {
 
 
 
-/* ------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
 /* Desktop */
 @media (min-width: 1024px){
 
@@ -220,10 +306,12 @@ header {
     align-items: center;
 }
 .link_img_logo {
-width: 20%;
+    width: 22%;
+    margin: auto;
+    height: 5%;
 }
 .logo_nav {
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: 0%;
 }
@@ -241,12 +329,15 @@ width: 20%;
 height: auto;
 padding: 0%;
 width: 100%;
-padding: 8% 0;
+padding: 10% 0;
 }
 .nav_menu_card:hover {
-    color: white;
-    background-color: rgb(114, 114, 114);
+    color: var(--white);
+    background-color: var(--darkblue);
     transition: 0.25s;
+}
+.nav_menu_card:active {
+    background-color: var(--darkbluehover)
 }
 .nav_menu_card a {
     width: 10%;
@@ -270,14 +361,15 @@ height: 26em;
     padding: 0 0 8% 0;
 }
 .p_quemSomos {
-width: 60%;
-padding: 5%;
-margin: 0;
+    width: 30%;
+    padding: 0%;
+    margin: auto;
 }
 .img_quemSomos {
-    width: 40%;
+    width: 35%;
     margin: auto;
-    padding: 6%;
+    padding: 0%;
+    border-radius: 16px;
 }
 
 /* Quem Somos Pagina */
@@ -285,12 +377,13 @@ margin: 0;
 .quemSomos_pgn {
     display: flex;
     flex-direction: column;
-    padding: 0 0 8% 0;
+    padding: 0;
 }
 .text_quemSomos_pgn {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    padding: 5% 0;
 }
 .p_quemSomos_pgn {
 width: 60%;
@@ -300,10 +393,63 @@ margin: 0;
 .img_quemSomos_pgn {
     width: 40%;
     margin: auto;
-    padding: 6%;
+    padding: 0%;
+    border-radius: 16px;
+}
+.carrossel_projetos_mobile {
+    display: none;
 }
 
+
+.nossosProjetos {
+    background-color: var(--darkblue);
+    box-shadow: 0px 0px 10px rgb(179, 177, 177) ;
+    border-radius: 0 0 16px 16px;
+}
+.titulo_foco {
+    color: var(--white);
+    text-align: center;
+    padding: 5% 0;
+    font-size: 36pt;
+    text-shadow: 0px 4px 4px #0000003f;
+}
+.carrossel_projetos {
+    background-color: var(--darkgreen);
+    padding: 5% 0;
+}
+.card_carrossel_projetos_focus {
+    width: 50%;
+    margin: 3% auto;
+    box-shadow: 0px 0px 20px var(--darkgreenhover);
+    border-radius: 16px;
+}
+.card_carrossel_projetos {
+    width: 100%;
+    padding: 0%;
+    margin: auto;
+}
+.slider-nav {
+    padding: 0%;
+}
+.desc_projetos {
+    padding: 5%;
+    text-align: center;
+    color: var(--white);
+    font-size: 28pt;
+}
+.carrossel_projetos_desktop {
+    display: block;
+}
+.carrossel_projetos_mobile {
+    display: none;
+}
+
+
 /* Barra Verde */
+
+.barra_verde {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
+}
 
 /* Serviços */
 
@@ -320,6 +466,14 @@ margin: 0;
 }
 .img_card_servicos {
     width: 100%;
+}
+
+.titulo_section_servicos {
+    text-align: center;
+    color: var(--white);
+    padding: 5%;
+    font-size: 36pt;
+    text-shadow: 0px 4px 4px #0000003f
 }
 
 /* Formulario */

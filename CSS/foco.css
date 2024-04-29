@@ -1,10 +1,15 @@
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
-}
+}  
 :root {
-    --darkgreen: #23650C;
-    --darkblue: #0E088D;
+    --black: #000000;
+    --white: #ffffff;
+    --darkgreen: #09aa61;
+    --darkgreenhover: #09894f;
+    --darkblue: #213489;
+    --darkbluehover: #1b2a6d;
+
 }
 .poppins-extralight {
     font-family: "Poppins", sans-serif;
@@ -48,11 +53,11 @@
     list-style: none;
     padding: 3%;
     text-decoration: none;
-    color: black;
+    color: var(--black);
 }
 
 /* .nav_menu_card:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid --black;
     border-radius: 3px;
     transition: 0.25s;
 } */
@@ -63,16 +68,16 @@
     width: 100%;
 }
 .desc_foco {    
-    background-color: #23650C;
+    background-color: var(--darkgreen);
     text-align: center;
     padding-bottom: 10%;
 }
 .titulo_foco {
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 .p_foco {
-    color: white;
+    color: var(--white);
     margin: 5%;
     text-align: justify;
 }
@@ -85,9 +90,9 @@
     border-radius: 6px;
 }
 .btn_foco:hover {
-    color: white;
-    background-color: #4dd71a;
-    box-shadow: 0px 0px 10px #174208;
+    color: var(--white);
+    background-color: var(--darkgreenhover);
+    box-shadow: 0px 0px 10px var(--darkgreenhover);
     transition: 0.25s;
 }
 
@@ -109,7 +114,7 @@
     flex-direction: column;
     margin: 5%;
     text-align: center;
-    border: 0px solid black;
+    border: 0px solid transparent;
     border-radius: 10px;
     box-shadow: 0px 0px 12px rgb(179, 177, 177);
     padding: 0%;
@@ -141,7 +146,7 @@ footer {
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    background-color: #0E088D;
+    background-color: var(--darkblue);
     color: white;
     padding: 15% 5% 5% 5%;
     border-radius: 16px 16px 0 0 ;
@@ -171,7 +176,12 @@ footer p {
     padding: 1% 0;
 }
 
-/* ------------------------------------------------- */
+.qrcode {
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
 /* Desktop */
 @media (min-width: 1024px){
 
@@ -182,10 +192,12 @@ header {
     align-items: center;
 }
 .link_img_logo {
-width: 20%;
+    width: 22%;
+    margin: auto;
+    height: 5%;
 }
 .logo_nav {
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding: 0%;
 }
@@ -203,12 +215,15 @@ width: 20%;
 height: auto;
 padding: 0%;
 width: 100%;
-padding: 8% 0;
+padding: 10% 0;
 }
 .nav_menu_card:hover {
-    color: white;
-    background-color: rgb(114, 114, 114);
+    color: var(--white);
+    background-color: var(--darkblue);
     transition: 0.25s;
+}
+.nav_menu_card:active {
+    background-color: var(--darkbluehover)
 }
 .nav_menu_card a {
     width: 10%;
