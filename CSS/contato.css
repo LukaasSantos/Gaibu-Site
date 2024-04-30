@@ -1,0 +1,71 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Mobile */
+
+/* titulo formulario */
+.titulo_form {
+    background-color: var(--darkgreen);
+    color: var(--white);
+    text-align: center;
+    padding: 5% 0;
+}
+
+/* formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5%;
+}
+input {
+    padding: 3%;
+    margin: 2%;
+    background-color: #4a4a4a12;
+    border: 0px solid transparent;
+    border-radius: 5px;
+}
+.enviar_form:hover {
+    background-color: #4a4a4a71;
+    transition: 0.5;
+}
+
+textarea {
+    width: 100%;
+    margin: 2%;
+    background-color: #4a4a4a12;
+    border: 0px solid transparent;
+    border-radius: 5px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* Desktop */
+@media (min-width: 1024px){
+
+/* Formulario */
+.titulo_contato {
+    padding: 2%;
+}
+.titulo_form {
+    padding: 0;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+    padding: 5% 0;
+}
+input, textarea {
+    width: 40%;
+    padding: 3%;
+    background-color: #4a4a4a2e;
+    border: 0px solid transparent;
+    border-radius: 5px;
+}
+textarea {
+    width: 100%;
+    margin: 2%;
+}
+}
