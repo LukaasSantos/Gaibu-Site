@@ -1,66 +1,5 @@
-* {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-}  
-:root {
-    --black: #000000;
-    --white: #ffffff;
-    --darkgreen: #09aa61;
-    --darkgreenhover: #09894f;
-    --darkblue: #213489;
-    --darkbluehover: #1b2a6d;
-
-}
-.poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-}
-.poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-.poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-/* Nav */
-
-.logo_nav {
-    width: 60%;
-    margin: 10% 20% 0 20%;
-}
-.nav_hidden {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-}
-.nav_menu {
-    display: none;
-    text-align: center;
-    padding-inline-start: 0px;
-}
-.nav_menu_card {
-    list-style: none;
-    padding: 3%;
-    text-decoration: none;
-    color: var(--black);
-}
-
-/* .nav_menu_card:hover {
-    border-bottom: 2px solid --black;
-    border-radius: 3px;
-    transition: 0.25s;
-} */
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Mobile */
 
 /* Foco */
 
@@ -97,14 +36,12 @@
 }
 
 /* Outros Servicos */
-
 .titulo_section {
     text-align: center;
     padding: 5%;
     font-size: 36pt;
     text-shadow: 0px 4px 4px #0000003f
 }
-
 .card_menu {
     display: flex;
     flex-wrap: wrap;
@@ -138,109 +75,24 @@
     border: 0px solid transparent;
     border-radius: 6px;
     padding: 3%;
-}
-
-/* footer */
-
-footer {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--darkblue);
-    color: white;
-    padding: 15% 5% 5% 5%;
-    border-radius: 16px 16px 0 0 ;
-    border: 0px solid transparent;
-    text-align: center;
-    box-shadow: 0px -6px 10px rgb(179, 177, 177) ;
-}
-.nav_menu_footer {
-    padding-inline-start: 0px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding-bottom: 3%;
-    width: 90%;
-    text-align: center;
-    justify-content: space-evenly;
-    margin: auto;
-}
-.nav_menu_footer li {
-    text-align: center;
-}
-.nav_menu_footer a {
-    color: white;
     text-decoration: none;
 }
-footer p {
-    padding: 1% 0;
+.btn_card_servicos:active {
+    background-color: var(--darkbluehover);
 }
 
-.qrcode {
-    display: none;
-}
 
-/* ------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------- */
 
 /* Desktop */
 @media (min-width: 1024px){
 
-/* Nav Bar */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.link_img_logo {
-    width: 22%;
-    margin: auto;
-    height: 5%;
-}
-.logo_nav {
-    width: 90%;
-    margin: auto;
-    padding: 0%;
-}
-.nav_hidden {
-    width: 60%;
-    padding: 0%;
-}
-.nav_menu {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    width: 80%;
-}
-.nav_menu_card {
-height: auto;
-padding: 0%;
-width: 100%;
-padding: 10% 0;
-}
-.nav_menu_card:hover {
-    color: var(--white);
-    background-color: var(--darkblue);
-    transition: 0.25s;
-}
-.nav_menu_card:active {
-    background-color: var(--darkbluehover)
-}
-.nav_menu_card a {
-    width: 10%;
-    padding: 10%
-}
-.btn_menu {
-    display: none;
-}
 
 /* Foco */
-
 .foco {
     display: flex;
     flex-direction: row-reverse;
-    /* margin-top: 5%; */
 }
-
 .desc_foco {
     display: flex;
     flex-direction: column;
@@ -249,7 +101,6 @@ padding: 10% 0;
     width: 100%;
     background-color: var(--darkgreen);
     box-shadow: 10px 10px 20px rgba(47, 47, 47, 0.519);
-    ;
 }
 .img_foco {
     width: 40%;
@@ -257,67 +108,20 @@ padding: 10% 0;
     box-shadow: 0px 10px 20px rgba(47, 47, 47, 0.519);
     border-radius: 0px 16px 16px 0px;
 }
-
 .titulo_foco {
     margin: 2%;
     font-size: 24pt;
 }
-
 .p_foco {
 text-align: left;
-
 }
-
 .btn_foco {
     width: 25%;
     padding: 2%;
     margin: 5%;
 }
 
-/* footer */
-
-footer {
-    display: flex;
-    flex-direction: row;
-    height: 10%;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav_menu_footer {
-    padding: 0;
-    margin: 0;
-    padding-bottom: 8% ;
-}
-.nav_menu_footer li {
-    padding: 0;
-    margin: 0;
-}
-.aside_footer {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    text-align: left;
-    padding: 2%;
-}
-footer p {
-    padding: 0%;
-} 
-.logo_footer {
-    width: 25%;
-    margin: 0;
-}
-.logo_nav {
-    width: 75%;
-}
-.qrcode {
-    display: block;
-    width: 10%;
-    height: 5%;
-}
-
 /* Serviços */
-
 .card_menu {
     display: flex;
     flex-direction: row;
@@ -332,6 +136,5 @@ footer p {
 .img_card_servicos {
     width: 100%;
 }
-
 
 }

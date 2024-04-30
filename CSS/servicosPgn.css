@@ -1,0 +1,73 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Mobile */
+
+/* Servicos pgn */
+
+.card_menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    text-align: center;
+    border: 0px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px rgb(179, 177, 177);
+    padding: 0%;
+    width: 100%;
+}
+.img_card_servicos {
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.p_card_servicos {
+    text-align: left;
+    padding: 5%;
+}
+.p_card_servicos_ul {
+    text-align: left;
+    margin: 0 5%;
+    padding: 5%;
+}
+.btn_card_servicos {
+    width: 33%;
+    margin: 5% auto;
+    background-color: var(--darkblue);
+    color: var(--white);
+    text-align: center;
+    border: 0px solid transparent;
+    border-radius: 6px;
+    padding: 3%;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* Desktop */
+@media (min-width: 1024px){
+
+.card_menu {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+.card {
+    margin: auto;
+    width: 40%;
+    margin-bottom: 5%;
+}
+.img_card_servicos {
+    width: 100%;
+}
+.titulo_section_servicos {
+    text-align: center;
+    color: var(--white);
+    padding: 5%;
+    font-size: 36pt;
+    text-shadow: 0px 4px 4px #0000003f
+}
+}

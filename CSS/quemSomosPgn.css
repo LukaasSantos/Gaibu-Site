@@ -1,0 +1,137 @@
+/* ---------------------------------------------------------------------------------------------------------- */
+/* Mobile */
+
+/* Quem Somos Pgn */
+.p_quemSomos_pgn {
+    text-align: justify;
+    margin: 0 10%;
+}
+.img_quemSomos_pgn {
+    width: 70%;
+    margin: 10% 15%;
+    border-radius: 16px;
+}
+
+/* Quem Somos Projetos */
+
+.nossosProjetos {
+    background-color: var(--darkblue);
+    box-shadow: 0px 0px 10px rgb(179, 177, 177) ;
+    border-radius: 0 0 16px 16px;
+}
+.titulo_foco {
+    color: var(--white);
+    text-align: center;
+    padding: 5% 0;
+    font-size: 36pt;
+    text-shadow: 0px 4px 4px #0000003f;
+}
+.carrossel_projetos {
+    background-color: var(--darkgreen);
+    padding: 5% 0;
+}
+.card_carrossel_projetos_focus {
+    width: 90%;
+    margin: 3% auto;
+    box-shadow: 0px 0px 20px var(--darkgreenhover);
+    border-radius: 16px;
+}
+.card_carrossel_projetos {
+    width: 100%;
+
+}
+.desc_projetos {
+    padding: 5%;
+    text-align: center;
+    color: var(--white);
+    font-size: 28pt;
+}
+
+/* carrossel versao mobile */
+
+.carrossel_projetos_desktop {
+    display: none;
+}
+.slider-nav-mobile {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+/* Desktop */
+@media (min-width: 1024px){
+
+/* Quem Somos Pagina */
+
+.quemSomos_pgn {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.text_quemSomos_pgn {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 5% 0;
+}
+.p_quemSomos_pgn {
+    width: 60%;
+    padding: 5%;
+    margin: 0;
+}
+.img_quemSomos_pgn {
+    width: 40%;
+    margin: auto;
+    padding: 0%;
+    border-radius: 16px;
+}
+
+/* Quem Somos Projetos */
+.nossosProjetos {
+    background-color: var(--darkblue);
+    box-shadow: 0px 0px 10px rgb(179, 177, 177) ;
+    border-radius: 0 0 16px 16px;
+}
+.titulo_foco {
+    color: var(--white);
+    text-align: center;
+    padding: 5% 0;
+    font-size: 36pt;
+    text-shadow: 0px 4px 4px #0000003f;
+}
+.desc_projetos {
+    padding: 5%;
+    text-align: center;
+    color: var(--white);
+    font-size: 28pt;
+}
+.carrossel_projetos {
+    background-color: var(--darkgreen);
+    padding: 5% 0;
+}
+.card_carrossel_projetos_focus {
+    width: 50%;
+    margin: 3% auto;
+    box-shadow: 0px 0px 20px var(--darkgreenhover);
+    border-radius: 16px;
+}
+.card_carrossel_projetos {
+    width: 100%;
+    padding: 0%;
+    margin: auto;
+}
+.slider-nav {
+    padding: 0%;
+}
+
+.carrossel_projetos_desktop {
+    display: block;
+}
+.carrossel_projetos_mobile {
+    display: none;
+}
+
+}
