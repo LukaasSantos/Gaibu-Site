@@ -19,15 +19,26 @@
 <body>
 
 <!-- Nav Bar -->
-<header>
+<header class="header_mobile">
     <a class="link_img_logo" href="/index.html"><img class="logo_nav" src="../Res/Img/logo/png/logo_colorida_light_cut.png" alt="Logo Gaibu Serviços Industriais"></a>
     <nav class="nav_hidden">
-        <img onclick="acao()" class="btn_menu" src="../Res/Img/icons/icons8-cardápio-50.png" alt="botao para abrir menu lateral">
-        <ul class="nav_menu" id="submenu">
-            <a class="nav_menu_card" href="../index.html"><li>Home</li></a>
-            <a class="nav_menu_card" href="servicos.html"><li>Serviços</li></a>
+        <ul class="nav_menu drop-down closed" id="submenu">
+            <li style="border-bottom: 0px;"><img class="btn_menu nav-button" src="../Res/Img/icons/icons8-cardápio-50.png" alt="botao para abrir menu lateral"></li>
+            <a class="nav_menu_card" href="../index.html" ><li>Home</li></a>
+            <a class="nav_menu_card" href="servicos.html" ><li>Serviços</li></a>
             <a class="nav_menu_card" href="quemsomos.html"><li>Quem Somos</li></a>
-            <a class="nav_menu_card" href="contato.html"><li>Contato</li></a>
+            <a class="nav_menu_card" href="contato.html"  ><li>Contato</li></a>
+        </ul>
+    </nav>
+</header>
+<header class="header_desktop">
+    <a class="link_img_logo link_img_logo_mobile" href="/index.html"><img class="logo_nav" src="../Res/Img/logo/png/logo_colorida_light_cut.png" alt="Logo Gaibu Serviços Industriais"></a>
+    <nav class="nav_hidden nav_desktop">
+        <ul class="nav_menu nav_menu_desktop" id="submenu">
+            <a class="nav_menu_card nav_menu_card_desktop" href="../index.html"><li>Home</li></a>
+            <a class="nav_menu_card nav_menu_card_desktop" href="servicos.html"><li>Serviços</li></a>
+            <a class="nav_menu_card nav_menu_card_desktop" href="quemsomos.html"><li>Quem Somos</li></a>
+            <a class="nav_menu_card nav_menu_card_desktop" href="contato.html"><li>Contato</li></a>
         </ul>
     </nav>
 </header>

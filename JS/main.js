@@ -4,15 +4,15 @@ $('.carrossel').slick({
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        dots: true
     });
 
-
 // menu navbar
-// function acao(){
-//     var submenu = document.getElementById('submenu');
-//     if(submenu.style.display == 'block'){
-//     submenu.style.display = 'none';
-//     }else{
-//     submenu.style.display = 'block';
-//     }
-//     }
+
+(function() {
+// Bind Click event to the drop down navigation button
+document.querySelector('.nav-button').addEventListener('click', function() {
+/*  Toggle the CSS closed class which reduces the height of the UL thus 
+hiding all LI apart from the first */
+this.parentNode.parentNode.classList.toggle('closed')}, false);
+  })();
