@@ -33,7 +33,7 @@
 .card_carrossel_projetos_focus {
     width: 90%;
     margin: 3% auto;
-    box-shadow: 0px 0px 20px var(--darkgreenhover);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.250);
     border-radius: 16px;
 }
 .card_carrossel_projetos {
@@ -109,14 +109,12 @@
     font-size: 28pt;
 }
 .carrossel_projetos {
-    background-color: var(--darkgreen);
+    background-color: var(--white);
     padding: 5% 0;
 }
 .card_carrossel_projetos_focus {
     width: 50%;
     margin: 3% auto;
-    box-shadow: 0px 0px 20px var(--darkgreenhover);
-    border-radius: 16px;
 }
 .card_carrossel_projetos {
     width: 100%;

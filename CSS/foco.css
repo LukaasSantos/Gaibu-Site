@@ -89,22 +89,29 @@
 
 
 /* Foco */
+
 .foco {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
 }
 .desc_foco {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding-bottom: 0%;
-    width: 100%;
+    width: 50%;
     background-color: var(--darkgreen);
     box-shadow: 10px 10px 20px rgba(47, 47, 47, 0.519);
+    height: auto;
 }
 .img_foco {
-    width: 40%;
-    margin-right: 5%;
+
+    border-radius: 16px 16px 0px 0px;
+}
+.img_foco_carrossel{
+    width: 50%;
     box-shadow: 0px 10px 20px rgba(47, 47, 47, 0.519);
     border-radius: 0px 16px 16px 0px;
 }
@@ -121,7 +128,7 @@ text-align: left;
     margin: 5%;
 }
 
-/* Serviços */
+/* Outros Serviços */
 .card_menu {
     display: flex;
     flex-direction: row;
