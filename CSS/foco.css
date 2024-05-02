@@ -18,15 +18,17 @@
 .p_foco {
     color: var(--white);
     margin: 5%;
-    text-align: justify;
+    text-align: left;
 }
 .btn_foco {
     margin: auto;
     width: 50%;
     text-align: center;
     padding: 3%;
-    border: 0px solid transparent;
     border-radius: 6px;
+    background-color: var(--white);
+    color: var(--black);
+    text-decoration: none;
 }
 .btn_foco:hover {
     color: var(--white);
@@ -40,7 +42,11 @@
     text-align: center;
     padding: 5%;
     font-size: 36pt;
-    text-shadow: 0px 4px 4px #0000003f
+    text-shadow: 0px 4px 4px #0000003f;
+}
+
+.titulo_card_servicos {
+    margin: 4%;
 }
 .card_menu {
     display: flex;
@@ -60,15 +66,16 @@
 .img_card_servicos {
     margin: auto;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 .p_card_servicos {
     text-align: justify;
     padding: 5%;
+    margin: 0 5%;
 }
 .btn_card_servicos {
     width: 33%;
-    margin: 5%;
+    margin: 5% auto;
     background-color: var(--darkblue);
     color: white;
     text-align: center;
@@ -94,7 +101,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
 .desc_foco {
     display: flex;
@@ -103,29 +110,28 @@
     padding-bottom: 0%;
     width: 50%;
     background-color: var(--darkgreen);
-    box-shadow: 10px 10px 20px rgba(47, 47, 47, 0.519);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
     height: auto;
 }
 .img_foco {
-
     border-radius: 16px 16px 0px 0px;
 }
 .img_foco_carrossel{
     width: 50%;
-    box-shadow: 0px 10px 20px rgba(47, 47, 47, 0.519);
-    border-radius: 0px 16px 16px 0px;
+    box-shadow: 0px -6px 5px rgba(0, 0, 0, 0.500);
+    border-radius: 16px 16px 0px 0px;   
+}
+.carrossel_foco {
+    background-color: var(--darkgreen);
 }
 .titulo_foco {
     margin: 2%;
     font-size: 24pt;
 }
-.p_foco {
-text-align: left;
-}
 .btn_foco {
     width: 25%;
     padding: 2%;
-    margin: 5%;
+    margin: 5% auto;
 }
 
 /* Outros Serviços */

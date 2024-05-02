@@ -43,6 +43,16 @@
     right: 2px;
 }
 
+.whatsapp_mobile {
+    position:sticky;
+    left: 100%;
+    top: 500px;
+}
+
+.whatsapp {
+    display: none;
+}
+
 /* Quem Somos Home */
 .titulo_section {
     text-align: center;
@@ -139,6 +149,20 @@
 /* Carrossel */
 .card_carrossel {
 height: 100%;
+}
+
+/* whatsapp */
+.whatsapp {
+    display: block;
+    position:sticky;
+    left: 100%;
+    top: 400px;
+    width: 10%;
+}
+
+.whatsapp_mobile {
+    display: none;
+
 }
 
 /* Quem Somos */

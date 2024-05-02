@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="Res/Img/logo/png/logo_favicon_branca.png" type="image/x-icon">
-<title>Gaibu - Construção Civil</title>
+<title>Gaibu - Serralheria</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -42,14 +42,23 @@
         </ul>
     </nav>
 </header>
+
 <main>
     <!-- utilizei "foco" pra criar um css que sirva de base para os outros sites de servico -->
 <section class="foco">
-    <img class="img_foco" src="../../Res/Img/png/20230323_153924_quad.jpg" alt="">
+    <span class="carrossel_foco img_foco_carrossel">
+    <img class="img_foco" src="../../Res/Img/card_servicos/civil.png" alt="">
+    <img class="img_foco" src="../../Res/Img/card_servicos/civil.png" alt="">
+    </span>
     <div class="desc_foco">
         <h2 class="titulo_foco poppins-extralight">Construção Civil</h2>
-        <p class="p_foco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui  </p>
-        <a href=""><button class="btn_foco">Entre em Contato</button></a> 
+        <ul class="p_foco">
+            <li>Estruturas;</li>
+            <li>Bases;</li>
+            <li>Calçadas;</li>
+            <li>Visita Técnica;</li>
+        </ul>
+    <a href="" class="btn_foco">Entre em Contato</a>
     </div>
 </section>
 
@@ -57,23 +66,63 @@
 <section class="servicos">
     <h1 class="titulo_section poppins-extralight">Outros Serviços</h1>
     <div class="card_menu">
-        <div sty class="card serralheria">
-            <img class="img_card_servicos" src="../../Res/Img/png/20230323_1539244.png" alt="">
+        <!-- solda -->
+        <div class="card">
+            <img class="img_card_servicos" src="../../Res/Img/card_servicos/solda.png" alt="">
             <h2 class="titulo_card_servicos ">Serralheria</h2>
-            <p class="p_card_servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui </p>
-            <a class="btn_card_servicos" href="serralheria.html">Saiba Mais</a> 
+            <ul class="p_card_servicos">
+                <li>Serralheria em geral;</li>
+                <li>Portas e Portões automáticos;</li>
+                <li>Forros;</li>
+                <li>[...]</li>
+            </ul>
+            <a class="btn_card_servicos" href="serralheria.html">Saiba Mais</a>
         </div>
-        <div class="card hidraulica">
-            <img class="img_card_servicos" src="../../Res/Img/png/20230323_1539244.png" alt="">
-            <h2 class="titulo_card_servicos ">Hidraulica</h2>
-            <p class="p_card_servicos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim nisi. Sed sodales, risus vitae hendrerit interdum, diam nibh posuere justo, et pretium eros ante sit amet ante. Nulla ornare tempor justo sed viverra. Vestibulum posuere lectus sed tortor pulvinar mollis. Ut ut dui </p>
-            <a class="btn_card_servicos" href="hidraulica.html">Saiba Mais</a>
+        <!-- gesso -->
+        <div class="card">
+            <img class="img_card_servicos" src="../../Res/Img/card_servicos/gesso.png" alt="">
+            <h2 class="titulo_card_servicos ">Gesso em Geral</h2>
+            <ul class="p_card_servicos">
+                <li>Colocação de Gesso;</li>
+                <li>Drywall;</li>
+                <li>Forros;</li>
+                <li>[...]</li>
+            </ul>
+            <a class="btn_card_servicos" href="gesso.html">Saiba Mais</a>
+        </div>
+            <!-- pintura -->
+        <div class="card">
+            <img class="img_card_servicos" src="../../Res/Img/card_servicos/pintura.png" alt="">
+            <h2 class="titulo_card_servicos ">Pintura e Textura</h2>
+            <ul class="p_card_servicos">
+                <li>Pintura em Geral;</li>
+                <li>Aplicação de Texturas;</li>
+                <li>Pintura de Galpão Industrial;</li>
+                <li>[...]</li>
+            </ul>            
+            <a class="btn_card_servicos" href="pintura.html">Saiba Mais</a>
+        </div>
+        <!-- montagens -->
+        <div class="card">
+            <img class="img_card_servicos" src="../../Res/Img/card_servicos/montagem.png" alt="">
+            <h2 class="titulo_card_servicos ">Montagens</h2>
+            <ul class="p_card_servicos">
+                <li>Montagens de Porta Paletes;</li>
+                <li>Montagens de Lonas Industriais;</li>
+                <li>Montagem de mobiliários Corporativos;</li>
+                <li>[...]</li>
+            </ul>
+            <a class="btn_card_servicos" href="montagem.html">Saiba Mais</a>
         </div>
     </div>
 
 </section>
 
+
 </main>
+
+
+
 
 <!-- footer -->
 <footer>
@@ -96,5 +145,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="../../JS/main.js"></script>
+<script src="../../JS/foco.js"></script>
 </body>
 </html>
