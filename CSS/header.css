@@ -6,7 +6,6 @@
     width: 60%;
     margin: 5% 20%;
 }
-
 .nav_hidden {
     display: flex;
     flex-direction: column;
@@ -24,13 +23,11 @@
     text-decoration: none;
     color: var(--black);
 }
-
 .header_desktop {
     display: none;
 }
 
 /* Nav menu mobile */
-
 nav .drop-down {
     list-style: none; 
     overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
@@ -52,7 +49,6 @@ nav .drop-down li:hover {
     border-bottom: 5px solid #2c3e503a;
     transition: 0.25s;
 }
-
 nav .drop-down li a {
     display: block;
     color: #ecf0f1;
@@ -65,8 +61,6 @@ nav .drop-down li:first-child a:after {
     margin-left: 0px; /* Excessive -margin to bring link text back to center */
     margin-right: 5px;
 }
-
-
 
 /* ---------------------------------------------------------------------------------------------------------- */
 
@@ -86,7 +80,6 @@ header {
 .header_mobile {
     display: none;
 }
-
 .link_img_logo {
     width: 22%;
     margin: auto;

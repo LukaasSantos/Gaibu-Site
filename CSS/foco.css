@@ -2,7 +2,6 @@
 /* Mobile */
 
 /* Foco */
-
 .img_foco {
     width: 100%;
 }
@@ -44,7 +43,6 @@
     font-size: 36pt;
     text-shadow: 0px 4px 4px #0000003f;
 }
-
 .titulo_card_servicos {
     margin: 4%;
 }
@@ -88,15 +86,12 @@
     background-color: var(--darkbluehover);
 }
 
-
 /* ---------------------------------------------------------------------------------------------------------- */
 
 /* Desktop */
 @media (min-width: 1024px){
 
-
 /* Foco */
-
 .foco {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,5 @@
 /* ------------------------------------------------------- */
 /* Mobile */
-
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -28,9 +27,7 @@
     font-weight: 600;
     font-style: normal;
 }
-
 /* carrossel Home */
-
 .card_carrossel {
     width: 100%;
     height: 100%;
@@ -42,17 +39,15 @@
 .slick-next {
     right: 2px;
 }
-
+/* whatsapp */
 .whatsapp_mobile {
     position:sticky;
     left: 100%;
     top: 500px;
 }
-
 .whatsapp {
     display: none;
 }
-
 /* Quem Somos Home */
 .titulo_section {
     text-align: center;
@@ -69,23 +64,6 @@
     margin: 10% 15%;
     border-radius: 16px;
 }
-
-/* Servicos Home */
-/* ondas */
-/* .custom-shape-divider-top-1714428199 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-.custom-shape-divider-top-1714428199 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 90px;
-}*/
 .custom-shape-divider-top-1714428199 .shape-fill {
     fill: #FFFFFF;
 } 
@@ -119,6 +97,7 @@
 }
 .card_verde {
     background-color: var(--darkgreen);
+    padding-bottom: 2%;
 }
 .btn_card_servicos_home {
     width: 33%;
@@ -131,7 +110,6 @@
     padding: 3%;
     text-decoration: none;
 }
-
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 /*  Tablets */
@@ -150,7 +128,6 @@
 .card_carrossel {
 height: 100%;
 }
-
 /* whatsapp */
 .whatsapp {
     display: block;
@@ -159,12 +136,10 @@ height: 100%;
     top: 400px;
     width: 10%;
 }
-
 .whatsapp_mobile {
     display: none;
 
 }
-
 /* Quem Somos */
 .quemSomos {
     display: flex;
@@ -183,7 +158,6 @@ height: 100%;
 }
 
 /* servicos */
-
 .servicos_home {
     display: flex;
     flex-direction: column;
@@ -198,25 +172,21 @@ height: 100%;
     width: 20%;
     margin: 0 auto;
 }
-
 .card_verde {
     display: flex;
     flex-direction: row-reverse;
     text-align: left;
     padding: 5%;
 }
-
 .img_card_verde {
     width: 25%;
 }
-
 .desc_card_servicos_home {
     width: 40%;
 }
 .titulo_card_servicos_home {
     text-align: left;
 }
-
 .btn_card_servicos_home {
     width: 20%;
     margin: 5% auto;
